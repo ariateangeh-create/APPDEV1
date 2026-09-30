@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Script Basics</title>
+</head>
+<body>
+  <h1>Angelene's JavaScript Refresher</h1>
+  <p>Open the browser console to see the JavaScript output.</p>
+
+  <script>
+    console.log("Hello from my inline JavaScript!");
+  </script>
+
+  <!-- Module script: uses the final required files without adding app.js
+       to the final folder structure. -->
+  <script type="module">
+    import greet, { userInfo } from "./15_modules_export.js";
+    console.log(greet());
+    console.log(`User: ${userInfo.name}, Age: ${userInfo.age}`);
+  </script>
+</body>
+</html>
