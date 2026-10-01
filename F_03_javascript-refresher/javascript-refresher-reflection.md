@@ -1,6 +1,6 @@
 # JavaScript Refresher Reflection
 ### 00_script_in_html.html
-In part 00, I learned that JavaScript can be placed inside HTML and how it interacts with other JavaScript files. I encountered three console errors related to 15_modules, export.js, and the CORS policy. To resolve this, I installed and ran a live server; it took three attempts before it worked and the errors disappeared. Everything is now functioning correctly, the inline JavaScript, module scripts, and import/export connections. I realized the importance of knowing how to properly use the browser and console. For example: <script type="module" src="15_modules_export.js"></script>
+In part 00, I learned that JavaScript can be placed inside HTML and how it interacts with other JavaScript files. I encountered three console errors related to 15_modules, export.js, and the CORS policy. To resolve this, I installed and ran a live server; it took three attempts before it worked and the errors disappeared. Everything is now functioning correctly, the inline JavaScript, module scripts, and import/export connections. I realized the importance of knowing how to properly use the browser and console. For example:<script type="module"src="15_modules_export.js"></script>
 
 ### 01_base_syntax.js
 In Part 1, one of the important concepts I learned is case sensitivity, such as:  let myName = "Angelene"; let myname = "Ariate";  console.log(myName); console.log(myname);  We created myName and myname with different values to demonstrate that JavaScript is case-sensitive; for example: console.log("Hello JavaScript");  I also noticed some unrelated files in the APPDEV1 report, so I didn't run git add immediately. After running git status, I pushed the changes to GitHub.
@@ -18,7 +18,7 @@ In part 4, I learned that using personal development as an example helps me unde
 In Part 5, I learned that push() adds an item to the end of an array. For example: ["Chicken", "Pizza", "Ice Cream", "Fries"]. Meanwhile, shift() is used to remove the first item, so "Chicken" would be removed. I also used map(), which creates a new array based on each item.
 
 ### 06_control_structures.js
-In Part 6, three concepts were used and these are: if/else, for loop, and while loop. With the while loop, it starts at count = 0. For example, with each iteration: count++; This means the count increases by 1, so "Hello" would appear three times, for instance. Example:
+In Part 6, three concepts were used, and these are: if/else, for loop, and while loop. With the while loop, it starts at count = 0. For example, with each iteration: count++; This means the count increases by 1, so "Hello" would appear three times, for instance. Example:
 While loop:
 Hello
 Hello
