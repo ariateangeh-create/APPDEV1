@@ -37,3 +37,15 @@ Do not modify any other files.
 
 ### Reflection
 In this activity, I learned how typeof can identify the type of a value and how == and === work differently when comparing values. Also I verify the code by running it through Antigravity CLI.
+
+
+## 04_objects.js
+
+### Filename
+04_objects.js
+
+### Prompt
+Open @04_objects.js. Explain the lesson first and make a short plan. Do not edit the file yet.
+
+### Reflection
+In this activity, I learned how to use a simple example helped me understand how objects can organize information in a clear way.
