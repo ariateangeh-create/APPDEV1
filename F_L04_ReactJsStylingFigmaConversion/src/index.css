@@ -32,18 +32,31 @@ input:focus-visible {
 }
 
 #root {
+  width: 100%;
   min-height: calc(100vh - 48px);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 840px) {
+  body {
+    padding: 16px;
+  }
+
+  #root {
+    min-height: calc(100vh - 32px);
+  }
+}
+
+@media (max-width: 480px) {
   body {
     padding: 0;
   }
 
   #root {
     min-height: 100vh;
+    min-height: 100dvh;
+    align-items: flex-start;
   }
 }
