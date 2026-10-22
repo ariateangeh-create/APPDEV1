@@ -1,0 +1,271 @@
+
+.page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 24px;
+  background: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginCard {
+  width: 100%;
+  max-width: 950px;
+  min-height: 410px;
+  display: grid;
+  grid-template-columns: 44% 56%;
+  padding: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 13px;
+}
+
+.leafPanel {
+  min-width: 0;
+  min-height: 390px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #a6c0c1;
+}
+
+.leafPanel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 390px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.formPanel {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 38px 20px;
+  box-sizing: border-box;
+  color: #506f81;
+}
+
+.heading {
+  width: 100%;
+  margin: 0 0 26px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.heading strong {
+  color: #7c9fa0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.heading span {
+  color: #526f81;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 53px;
+}
+
+.tabs button {
+  min-width: 60px;
+  padding: 0 3px 6px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.activeTab {
+  border-bottom-color: #67899a !important;
+  color: #5b7b8d;
+}
+
+.inactiveTab {
+  color: #bdcbd5;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input {
+  width: 100%;
+  min-width: 0;
+  height: 24px;
+  padding: 2px 1px 6px;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid #829ba9;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+  color: #4f6e80;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+.input::placeholder {
+  color: #a9bdc9;
+  opacity: 1;
+}
+
+.input:focus {
+  border-bottom-color: #4e6d80;
+}
+
+.passwordField {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.passwordField .input {
+  flex: 1;
+}
+
+.passwordToggle {
+  position: absolute;
+  right: 2px;
+  bottom: 5px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #78909e;
+  font-size: 9px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.passwordField:focus-within .passwordToggle,
+.passwordToggle:focus {
+  opacity: 1;
+}
+
+.loginButton {
+  width: 100%;
+  height: 37px;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 0;
+  background: #4c6c7e;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.loginButton:hover {
+  background: #3f5e70;
+}
+
+.orText {
+  margin-top: 20px;
+  color: #a8bac7;
+  font-size: 12px;
+}
+
+.socialButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  margin-top: 18px;
+}
+
+.socialButton {
+  display: grid;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.googleIcon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.facebookIcon {
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+
+@media (min-width: 900px) {
+  .loginCard {
+    max-width: 950px;
+    min-height: 410px;
+  }
+
+  .leafPanel,
+  .leafPanel img {
+    min-height: 390px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 14px;
+  }
+
+  .loginCard {
+    max-width: 390px;
+    grid-template-columns: 1fr;
+  }
+
+  .leafPanel {
+    min-height: 170px;
+    max-height: 170px;
+  }
+
+  .leafPanel img {
+    min-height: 170px;
+    object-position: center 45%;
+  }
+
+  .formPanel {
+    padding: 26px 18px 24px;
+  }
+
+  .heading {
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .tabs {
+    margin-bottom: 32px;
+  }
+
+  .form {
+    max-width: 320px;
+  }
+}

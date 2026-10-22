@@ -1,0 +1,31 @@
+:root {
+  /* Design tokens: central values shared across the interface */
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-surface);
+
+  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Manrope', sans-serif;
+  --color-ink: #17162d;
+  --color-surface: #fdfdff;
+  --color-text: #222137;
+  --color-muted: #88869b;
+  --color-border: #e7e6ef;
+  --color-primary: #715be8;
+  --color-primary-hover: #5d48d0;
+  --color-accent: #b4a5ff;
+  --radius-md: 10px;
+  --shadow-card: 0 16px 50px rgba(30, 24, 75, 0.08);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { min-width: 320px; min-height: 100%; }
+body { min-width: 320px; min-height: 100vh; margin: 0; }
+button, input { font: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid rgba(113, 91, 232, .35); outline-offset: 3px; }
+a { color: inherit; }
+::selection { color: #fff; background: var(--color-primary); }
